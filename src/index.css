@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-primary text-ivory antialiased overflow-x-hidden selection:bg-accent selection:text-primary;
+  }
+}
+
+@layer utilities {
+  .clip-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
